@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            position: fixed;
+            background-color: lightblue;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav li { display: inline-block; font-size: 15px; padding: 8px; }
+        html { scroll-behavior: smooth; }
+        body { margin-top: 50px; }
+
+        figure.img {
+
+            margin: 20px 0;
+        }
+        
+        .photo-frame{
+            overflow: hidden;
+            width: 400px;
+            height: 300px;
+        }
+        figure.img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        figure.img:hover img {
+            transform: scale(1.1);
+        }
+
+        #topicon {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1001;
+        }
+
+        #topicon img {
+            width: 32px;
+            height: 32px;
+        }
+        .card-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#관광명소">관광 명소</a></li>
+            <li><a href="#먹거리">먹거리</a></li>
+        </ul>
+    </nav>
+    <header id="top">header</header>
+    
+    <main>
+        <section id="관광명소">
+            <h3>관광 명소</h3>
+            <div class="card-grid">
+                <figure class="img">
+                    <div class="photo-frame"><img src="경복궁" alt="경복궁 사진"></div>
+                    
+                    <figcaption>조선시대의 중심 궁궐로, 한국 전통 건축의 아름다움과 역사적 가치를 간직한 서울의 대표적 문화유산</figcaption>
+                </figure>
+                <figure class="img">
+                    <div class="photo-frame"><img src="익선동한옥거리" alt="익선동한옥거리 사진"></div>
+                    
+                    <figcaption>전통 한옥과 감성 카페가 어우러진 종로의 매력적인 복고풍 거리</figcaption>
+                </figure>
+                <figure class="img">
+                    <div class="photo-frame"><img src="남산타워" alt="남산서울타워 사진"></div>
+                    
+                    <figcaption>서울시를 360도 파노라마 뷰로 조망할 수 있는 최고의 전망대</figcaption>
+                </figure>
+                <figure class="img">
+                    <div class="photo-frame"><img src="롯데월드타워.png" alt="롯데월드타워 사진"></div>
+                    
+                    <figcaption>서울의 스카이라인을 대표하는 초고층 랜드마크로, 쇼핑, 전망, 문화시설이 한데 모인 복합 공간</figcaption>
+                </figure>
+                <figure class="img">
+                    <div class="photo-frame"><img src="별마당도서관" alt="별마당도서관 사진"></div>
+                    
+                    <figcaption>천장까지 이어진 책장이 인상적인, 책과 문화가 어우러진 열린 복합 문화 공간</figcaption>
+                </figure>
+                <figure class="img">
+                    <div class="photo-frame"><img src="북악팔각정.png" alt="북악팔각정 사진"></div>
+                
+                    <figcaption>서울 전경을 한눈에 내려다볼 수 있는 전망 명소, 드라이브와 야경 감상</figcaption>
+                </figure>
+            </div>
+            
+        </section>
+        <section id="먹거리">
+            <h3>먹거리</h3>
+            <article>article
+                <aside>aside</aside>
+            </article>
+            <article>article
+                <aside>aside</aside>
+            </article>
+        </section>
+    </main>
+
+
+    <footer id="topicon"><a href="#top"><img src="7604627.png"></a></footer>
+</body>
+</html>
